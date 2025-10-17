@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ecom Recommender — Demo</title>
+  <!-- static files are served under /static -->
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>E-commerce Recommender</h1>
+    <p class="subtitle">Get product recommendations + explanations</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="userId">User ID:</label>
+      <input id="userId" type="number" min="1" value="1" />
+      <button id="getBtn">Get Recommendations</button>
+      <span id="status" class="status"></span>
+    </section>
+
+    <section id="results" class="results">
+      <!-- recommendation cards will appear here -->
+    </section>
+  </main>
+
+  <footer>
+    <small>Backend: <code>/recommendations/{user_id}</code></small>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
